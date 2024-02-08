@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     "cloudinary",
     "embed_video",
     "taggit",
+
+    "blog",
 ]
 
 MIDDLEWARE = [
