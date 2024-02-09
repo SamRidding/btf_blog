@@ -1,0 +1,18 @@
+#navbar{
+    display: none;
+}
+
+#nav-link-cont {
+    padding: 1rem 2rem;
+}
+
+#nav-links {
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Pragati Narrow', sans-serif;
+    color: white;
+    padding: 0.2rem 0;
+}
