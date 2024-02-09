@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-
+<link rel="stylesheet" href="{% static 'blog/blog.css' %}">
 {% endblock %}
 
 {% block extra_title %}
@@ -10,5 +10,22 @@
 {% endblock %}
 
 {% block content %}
-
+<section id="posts-cont">
+    <div id="post-list-cont">
+        {% for post in post_list %}
+        {% if post.mix is False %}
+            <div class="blog-post">
+                <a href="#">
+                    <div class="post-img-cont">
+                        <img class="post-img" src="{{ post.image.url }}" alt="music cover artwork">
+                        <div class="post-title">
+                            <h2>{{ post.title }}</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
 {% endblock %}
