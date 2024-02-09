@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <div id="nav-link-cont">
+        <ul id="nav-links">
+            <li class="nav-link">
+                <a href="#">BLOG</a>
+            </li>
+            <li class="nav-link">
+                <a href="#">MIXES</a>
+            </li>
+            <li class="nav-link">
+                <a>SEARCH</a>
+            </li>
+            <li class="nav-link">
+                <a>CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
