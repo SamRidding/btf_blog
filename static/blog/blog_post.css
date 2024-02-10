@@ -24,3 +24,42 @@
     height: 100%;
     width: 20%;
 }
+
+#post-section {
+    font-family: 'Pragati Narrow', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.post-title {
+    font-size: 1.6rem;
+}
+
+.post-info {
+    font-size: 1.2rem;
+}
+
+.post-content {
+    font-family: 'Glegoo', serif;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.music-preview {
+    margin: 4rem auto;
+    width: 60%;
+    height: 400px;
+}
+
+.post-tags {
+    color: white;
+    display: flex;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 1.2rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.post-tag {
+    margin-right: 0.6rem;
+}
