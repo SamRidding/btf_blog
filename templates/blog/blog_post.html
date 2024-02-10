@@ -57,7 +57,7 @@
     {% if post.audio_one == '' %}
       
     {% else %}
-    <div class="music-preview">{% video post.audio_one '100% x 100%' %}</div>
+    <div class="music-preview">{% video post.audio_one '100% x 100%' is_secure=True %}</div>
     {% endif%}
   
     <div class="post-tags">
