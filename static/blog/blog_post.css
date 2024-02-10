@@ -1,0 +1,26 @@
+#post-head {
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+
+#post-head-img {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-img-1 {
+    filter: grayscale(0.8);
+    width: 20%;
+    height: 100%;
+}
+
+.post-img-2 {
+    filter: grayscale(0.4);
+    width: 20%;
+    height: 100%;
+}
+
+.post-img {
+    height: 100%;
+    width: 20%;
+}
