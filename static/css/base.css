@@ -35,3 +35,18 @@ a:hover {
     transition-duration: 500ms;
     color: #a8ff57;
 }
+
+/* ------------------------------------------- Mobile Screens */
+
+@media only screen and (max-width: 480px) {
+
+    #navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+}
