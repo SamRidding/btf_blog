@@ -26,10 +26,9 @@ a {
     cursor: pointer;
 }
 
-#logo {
-    color: white;
-    font-family: 'Pragati Narrow', sans-serif;
-    padding: 0.6rem 2rem;
+.logo {
+    height: 80px;
+    margin-left: 2rem;
 }
 
 a:hover {
