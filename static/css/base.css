@@ -36,10 +36,9 @@ a:hover {
     color: #a8ff57;
 }
 
-/* ------------------------------------------- Mobile Screens */
+/* ------------------------------------------- Tablet Screens */
 
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 768px) {
     #navbar {
         display: flex;
         justify-content: center;
@@ -48,5 +47,12 @@ a:hover {
     .logo {
         margin: 0;
     }
+}
+
+/* ------------------------------------------- Mobile Screens */
+
+@media only screen and (max-width: 480px) {
+
+    
 
 }
