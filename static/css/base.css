@@ -11,6 +11,59 @@ body {
     background-color: black;
 }
 
+#search {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(7, 7, 7, 0.84);
+    position: fixed;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.search-bar {
+    width: 25%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.search-bar form {
+    height: 100%;
+    width: 100%;
+}
+
+.search-bar input {
+    height: 100%;
+    width: 100%;
+    background-color: #EAF0F0;
+    color: black;
+    padding: 3px;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: 'Pragati Narrow', sans-serif;
+    border-radius: 3px;
+}
+
+#search-arrow {
+    position: absolute;
+    right: 7px;
+    top: 9px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
 #navbar {
     overflow: hidden;
     background-color: black;
