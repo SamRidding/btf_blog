@@ -16,6 +16,22 @@
   </head>
   <body>
 
+    <!-- Search Bar -->
+    <div id="search">
+      <div class='close' onclick="toggleSearch()">
+        <i class="fa-solid fa-x"></i>
+      </div>
+      <div class="search-bar">
+          <form method="POST" action="#">
+              {% csrf_token %}
+              <input type="search" name="searched">
+              <button id="search-arrow" type="submit">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+          </form>
+      </div>
+    </div>
+
     <!-- Navigation -->
     <nav id="navbar">
       <div id="logo-cont">
