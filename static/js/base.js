@@ -9,10 +9,10 @@ function toggleSearch() {
 
 
 function toggleContact() {
-  var search = document.getElementById('contact');
-  if (search.style.display === "flex") {
-    search.style.display = "none"
+  var contact = document.getElementById('contact');
+  if (contact.style.display === "flex") {
+    contact.style.display = "none"
   } else {
-    search.style.display = "flex"
+    contact.style.display = "flex"
   }
 }
