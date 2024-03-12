@@ -23,7 +23,7 @@
         <i class="fa-solid fa-x"></i>
       </div>
       <div class="search-bar">
-          <form method="POST" action="#">
+          <form method="POST" action="{% url 'search' %}">
               {% csrf_token %}
               <input type="search" name="searched">
               <button id="search-arrow" type="submit">
