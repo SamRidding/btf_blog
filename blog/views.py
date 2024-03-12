@@ -38,3 +38,16 @@ class GenreFilter(generic.ListView):
     def get_queryset(self):
 
         return Post.objects.filter(tags__slug=self.kwargs.get('tag_slug'))
+    
+
+def search(request):
+    """View to search blog posts"""
+
+    if request.method == "POST":
+        searched = request.POST.get('searched')
+        results = Post.objects.filter(title__icontains=searched)
+        return render(request, 'blog/search.html',
+                      {'searched': searched,
+                       'results': results, })
+    else:
+        return render(request, 'blog/search.html')
