@@ -1,18 +1,22 @@
-function toggleSearch() {
-    var search = document.getElementById('search');
-    if (search.style.display === "flex") {
-      search.style.display = "none"
-    } else {
-      search.style.display = "flex"
-    }
-  }
+var loader = document.getElementById("loader");
+  window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
 
+function toggleSearch() {
+  var search = document.getElementById("search");
+  if (search.style.display === "flex") {
+    search.style.display = "none";
+  } else {
+    search.style.display = "flex";
+  }
+}
 
 function toggleContact() {
-  var contact = document.getElementById('contact');
+  var contact = document.getElementById("contact");
   if (contact.style.display === "flex") {
-    contact.style.display = "none"
+    contact.style.display = "none";
   } else {
-    contact.style.display = "flex"
+    contact.style.display = "flex";
   }
 }
