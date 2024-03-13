@@ -11,6 +11,34 @@ body {
     background-color: black;
 }
 
+#loader {
+    height: 100%;
+    width: 100%;
+    background: rgba(7, 7, 7, 0.84);
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-loader {
+    animation: rotation 1.5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.logospin {
+    height: 75px;
+}
+
 #search {
     height: 100vh;
     width: 100vw;
