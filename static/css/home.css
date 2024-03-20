@@ -1,4 +1,4 @@
-#navbar{
+.logo {
     display: none;
 }
 
@@ -7,7 +7,7 @@
 }
 
 #nav-link-cont {
-    margin: 2rem;
+    margin: 1rem 2rem;
 }
 
 #nav-links {
