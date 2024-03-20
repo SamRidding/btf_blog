@@ -1,0 +1,14 @@
+#mixes {
+    height: calc(100vh - 84px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mixes-text {
+    font-family: 'Pragati Narrow', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 1rem;
+}
