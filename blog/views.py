@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.views.generic.base import TemplateView
 
 from .models import Post
 
@@ -27,6 +28,12 @@ class BlogPost(View):
                 "post": post,
             },
         )
+    
+
+class Mixes(TemplateView):
+    """View to display mixes page"""
+
+    template_name = "blog/mixes.html"
 
 
 class GenreFilter(generic.ListView):
