@@ -9,6 +9,16 @@ class Blog(generic.ListView):
 
     model = Post
     template_name = "blog/blog.html"
+    context_object_name = "posts"
+    paginate_by = 8
+    ordering = ['-posted_on']
+
+    def get_template_names(self, *args, **kwargs):
+        if self.request.htmx:
+            return "blog/post_list.html"
+        else:
+            return self.template_name
+
 
 
 class BlogPost(View):
