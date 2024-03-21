@@ -1,0 +1,22 @@
+{% for post in posts %}
+{% if post.mix is False %}
+    {% if forloop.last %}
+    <div 
+        hx-trigger="revealed"
+        hx-swap="afterend"
+        hx-get="{% url 'blog:blog' %}?page={{ page_obj.number|add:1 }}"
+    >
+    {% else %}
+    <div class="blog-post">
+    {% endif %}
+        <a href="{% url 'blog:blog_post' post.slug  %}">
+            <div class="post-img-cont">
+                <img class="post-img" src="{{ post.image.url }}" alt="music cover artwork">
+                <div class="post-title">
+                    <h2>{{ post.title }}</h2>
+                </div>
+            </div>
+        </a>
+    </div>
+{% endif %}
+{% endfor %}
