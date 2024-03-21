@@ -6,6 +6,7 @@ dj-database-url==2.1.0
 Django==4.2.10
 django-cloudinary-storage==0.3.0
 django-embed-video==1.4.9
+django-htmx==1.17.3
 django-taggit==5.0.1
 gunicorn==21.2.0
 idna==3.6
