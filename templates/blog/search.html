@@ -11,7 +11,7 @@
     <div id="post-list-cont">
         {% for result in results %}
         <div class="blog-post">
-            <a href="{% url 'blog_post' result.slug  %}">
+            <a href="{% url 'blog:blog_post' result.slug  %}">
                 <div class="post-img-cont">
                     <img class="post-img" src="{{ result.image.url }}" alt="music cover artwork">
                     <div class="post-title">
