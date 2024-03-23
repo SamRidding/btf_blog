@@ -62,7 +62,7 @@
   
     <div class="post-tags">
       {% for tag in post.tags.all %}
-      <a class="post-tag" href="{% url 'blog:filter_genre' tag.slug %}">{{ tag }}</a>
+      <a class="post-tag" href="{% url 'blog:genre_filter' tag.slug %}">{{ tag }}</a>
       {% endfor %}
     </div>
     
