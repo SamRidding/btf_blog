@@ -50,10 +50,12 @@ class GenreFilter(generic.ListView):
     """View to filter blog posts by genre tag"""
 
     model = Post
-    template_name = "blog/blog.html"
+    template_name = "blog/genre_filter.html"
+    context_object_name = 'genres'
 
     def get_queryset(self):
-
+        print(self.kwargs)
+        print(Post.objects.filter(tags__slug=self.kwargs.get('tag_slug')))
         return Post.objects.filter(tags__slug=self.kwargs.get('tag_slug'))
     
 
