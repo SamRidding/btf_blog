@@ -6,5 +6,5 @@ urlpatterns = [
      path("mixes", views.Mixes.as_view(), name = "mixes"),
      path("search/", views.search, name="search"),
      path('<slug:slug>/', views.BlogPost.as_view(), name='blog_post'),
-     path('genre/<slug:tag_slug>/', views.GenreFilter.as_view(), name='filter_genre'),
+     path('genre/<slug:tag_slug>/', views.GenreFilter.as_view(), name='genre_filter'),
 ]
