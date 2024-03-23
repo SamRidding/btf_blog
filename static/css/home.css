@@ -33,6 +33,7 @@
     .logo {
         display: block;
         margin: 0;
+        padding-left: 8px
     }
 
     #nav-link-cont {
