@@ -59,6 +59,38 @@
     {% else %}
     <div class="music-preview">{% video post.audio_one '100% x 100%' is_secure=True %}</div>
     {% endif%}
+
+    <div class="post-content">{{ post.content_two|safe }}</div>
+
+    {% if post.audio_two == '' %}
+      
+    {% else %}
+    <div class="music-preview">{% video post.audio_two '100% x 100%' is_secure=True %}</div>
+    {% endif%}
+
+    <div class="post-content">{{ post.content_three|safe }}</div>
+
+    {% if post.audio_three == '' %}
+      
+    {% else %}
+    <div class="music-preview">{% video post.audio_three '100% x 100%' is_secure=True %}</div>
+    {% endif%}
+
+    <div class="post-content">{{ post.content_four|safe }}</div>
+
+    {% if post.audio_four == '' %}
+      
+    {% else %}
+    <div class="music-preview">{% video post.audio_four '100% x 100%' is_secure=True %}</div>
+    {% endif%}
+
+    <div class="post-content">{{ post.content_five|safe }}</div>
+
+    {% if post.audio_five == '' %}
+      
+    {% else %}
+    <div class="music-preview">{% video post.audio_five '100% x 100%' is_secure=True %}</div>
+    {% endif%}
   
     <div class="post-tags">
       {% for tag in post.tags.all %}
